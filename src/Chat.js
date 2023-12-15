@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { IoSend } from "react-icons/io5";
 import { RiRobot2Fill } from "react-icons/ri";
@@ -85,11 +84,9 @@ const Chat = ({ chatId, onDelete }) => {
         {chatHistory.slice(0, chatHistory.length-1).map((chat, index) => (
           <div style={{ fontSize: '25px', width: '100%' }} key={index}>
             <div style={{ display: 'flex', backgroundColor: '31304D', alignItems: 'center' }}>
-            {/* <p style={{ width: '110px', padding: '0 10px' }}>You:</p> */}
             <FaUserAlt style={{ width: '40px', height:'40px', margin: '0 5px',color:'#818FB4'}}/><p> {chat.input}</p>
             </div>
             <div style={{ display: 'flex', backgroundColor: '#FCF5ED', alignItems: 'center'  }}>
-            {/* <p style={{ width: '110px', padding: '0 10px' }}>NewGPT:</p> */}
             <RiRobot2Fill style={{ width: '50px', height:'50px', margin: '0 5px',color:'#363062' }}/><p> {chat.response}</p>
           </div>
           </div>

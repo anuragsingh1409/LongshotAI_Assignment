@@ -1,4 +1,3 @@
-// src/ChatList.js
 import React from 'react';
 import { MdDelete } from "react-icons/md";
 
